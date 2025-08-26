@@ -6,7 +6,7 @@ resolution = true
 skip-lint = false
 
 [programs.localnet]
-habitdao = "BW5yXwViMeeYR2Ry9c8XcQrn9s5P4Y6CHv37c3F5zQ2w"
+habitdao = "2wJiMhM8x3oJPU8ahLwn2Lz56mfCGfumm65hAepPZjHx"
 
 [registry]
 url = "https://api.apr.dev"

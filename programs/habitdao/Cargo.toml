@@ -5,8 +5,8 @@ description = "Created with Anchor"
 edition = "2021"
 
 [lib]
-crate-type = ["cdylib", "lib"]
 name = "habitdao"
+crate-type = ["cdylib", "lib"]
 
 [features]
 default = []
@@ -21,8 +21,9 @@ custom-panic = []
 
 
 [dependencies]
-anchor-lang = "0.31.1"
-
+anchor-lang = { version = "0.31.1", features = ["init-if-needed"] }
+anchor-spl = { version = "0.31.1", features = ["token_2022"] }
 
 [lints.rust]
 unexpected_cfgs = { level = "warn", check-cfg = ['cfg(target_os, values("solana"))'] }
+
